@@ -1,0 +1,185 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    overflow-x:hidden ;
+}
+
+:root {
+
+    --dk-violet: hsl(268, 75%, 9%);
+    --lt-violet: hsl(268, 47%, 21%);
+    --lt-violet2: hsl(281, 89%, 26%);
+    --vb-violet: hsl(285, 91%, 52%);
+    --vb-violet2: hsl(290, 70%, 36%);
+  
+    --vb-yellow: hsl(52, 100%, 62%);
+  
+  
+    --pl-white: hsl(0, 0%, 100%);
+  
+    --vb-cyan: hsl(176, 100%, 44%);
+    --vb-cyan2: hsl(177, 92%, 70%);
+    --dk-text: hsl(198, 20%, 13%);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:#00002E;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+}
+.wrapper{
+    background:#00002E;
+    width: 100vw;
+    height: 100vh;
+}
+.hero-heading{
+    font-size: 100px;
+    font-family: "Suez One" , sans-serif;
+    color: #D292FF;
+}
+
+.input-bar{
+    height: 50px;
+    width: 600px;
+    border-radius: 3rem;
+    text-align: center;
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+::placeholder{
+    text-align: center;
+}
+
+/* Reset some default styles for the list and anchor elements */
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Style for the navbar */
+.navbar {
+    background-color: black;
+    color: #fff;
+    padding: 10px 0;
+}
+.brand{
+    /* padding: 10px 0; */
+}
+.role{
+    font-weight: 500;
+}
+.link:hover{
+    text-decoration: underline;
+}
+/* Center the list items horizontally */
+
+/* Style for the list items (navbar links) */
+.nav-item {
+    display: inline-block;
+    margin: 0 15px;
+}
+/* .rand{
+    padding: 30px;
+} */
+/* Style for the navbar links */
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Style for the links on hover */
+.nav-item a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+
+.dis{
+    font-family: "Suez One", sans-serif;
+    text-align: center;
+}
+
+.name{
+    font-size: 35px;
+}
+
+
+.button-86 {
+    all: unset;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    overflow: hidden;
+  }
+  
+  .button-86::after,
+  .button-86::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+  }
+  
+  .button-86::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #28282d;
+    border-radius: 10px;
+  }
+  
+  .button-86::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #4681f4;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50px;
+  }
+  
+  .button-86:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+  }
+  
+  .button-86:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .button-86:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+  }

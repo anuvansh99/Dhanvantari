@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhanvantari</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Indie+Flower&family=Suez+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="navbar flex">
+        <span
+          ><p class="text-white mr-[310px] font-bold text-2xl ml-[30px]">
+            Dhanvantari
+          </p></span
+        >
+        <ul class="nav-list flex justify-center">
+          <li class="nav-item"><a href="#home">Homepage</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <!-- <li class="nav-item"><a href="#chatbot">Chatbot</a></li> -->
+          <li class="nav-item"><a href="#feedback">Feedback</a></li>
+          <li class="nav-item"><a href="#community">Community</a></li>
+        </ul>
+      </nav>
+      <div class="flex">
+        <div
+          class="chatbot absolute right-[75px] mt-[50px] text-white bg-red-500 h-[30px] rounded-md"
+        >
+          👋 Hey there! Got any questions? I am here to help.
+        </div>
+        <img
+          src="./bot.jpeg"
+          alt=""
+          class="absolute right-5 mt-[50px] bg-white rounded-full"
+        />
+      </div>
+      <div class="container">
+        <div>
+          <h1 class="hero-heading"><span class="role"></span></h1>
+        </div>
+        <form id="myForm">
+          <div class="flex">
+            <input type="text" placeholder="Enter here..." class="input-bar" />
+            <button class="button-86" role="button" type="submit">
+              Search
+            </button>
+          </div>
+        </form>
+        <div class="show-data bg-blue-300 mt-[50px] rounded-md props">
+          <a href="" class="link" target="_blank"
+            ><h1 class="medicine-name font-bold text-center dis name"></h1
+          ></a>
+          <p class="reference_text dis"></p>
+          <p class="dispencing_pack dis"></p>
+          <p class="disease_or_symptom dis"></p>
+          <p class="dose dis"></p>
+          <p class="Precaution_or_Contraindication dis"></p>
+          <p class="preferred_use dis"></p>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script
+      src="https://kit.fontawesome.com/58a810656e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var typeData = new Typed(".role", {
+        strings: ["Dhanvantari", "Ayurveda Search Engine", "Search..."],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1000,
+      });
+    </script>
+  </body>
+</html
